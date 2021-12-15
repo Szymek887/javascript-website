@@ -117,8 +117,8 @@
     display: block;
 }
 
-.welcome{
-    padding: 50px;
+.content{
+    padding: 20px;
 }
 
 .welcome p
@@ -134,4 +134,12 @@
     padding: 10px;
     background-color: rgb(59, 59, 59);
     color: white;
+}
+
+.excersise1, .excersise2
+{
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, #FF9190, #FDC094);
 }
