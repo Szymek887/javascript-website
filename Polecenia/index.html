@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona napisana w HTML, CSS i JS.">
+    <meta name="author" content="Jakub Szymczak">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logoWrapper">
+            <center>
+                <img src="js.png" alt="js" id="logo">
+                <h1>JavaScript</h1>
+            </center>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="./index.html" class="active">Polecenia</a></li>
+            <li class='dropdown'>
+                <a href="#" class='dropbtn'>Zadania</a>
+                <div class="dropdown-content">
+                    <a href="../Zadanie1/index.html">Zadanie 1</a>
+                    <a href="../Zadanie2/index.html">Zadanie 2</a>
+                </div>
+            </li>
+            <li><a href="./Inne/index.html">Inne</a></li>
+            <li><a onclick="changeColor()">Kolor</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Zadanie 1</h2>
+        <p>Przygotuj stronę internetową uwzględniając język polski na stronie, poprawne kodowanie polskich znaków oraz tytuł strony ZAD1 i uwzględnij formatowanie css. Zapisz go pod nazwą strona1.html. Dołącz do dokumentu kod wykorzystując składnię JavaScript, który spowoduje wyświetlenie efektu działania skryptu umieszczonego w pliku srednia.js. Skrypt ma spowodować wyświetlenie średniej arytmetycznej z n wprowadzonych przez użytkownika liczb. Podane wartości przez użytkownika i wynik przedstaw w ciekawy sposób. </p>
+        <br>
+        <h2>Zadanie 2</h2>
+        <p>Utwórz dokument strona2.html poprawnie deklarując w nim kodowanie polskich znaków, tytuł dokumentu - ZAD2 oraz język polski. W części głównej umieść tekst "Tabliczka mnożenia".</p>
+    </div>
+    <div class="footer">
+        <center>
+            <p>Wszelkie prawa zastrzeżone. Wykonał Jakub Szymczak.</p>
+            <p><b>Ostatnia modyfikacja: </b>14.12.2021</p>
+        </center>
+    </div>
+    <script src="../scripts/app.js"></script>
+</body>
+</html>

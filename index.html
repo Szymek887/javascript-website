@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona napisana w HTML, CSS i JS.">
+    <meta name="author" content="Jakub Szymczak">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logoWrapper">
+            <center>
+                <img src="js.png" alt="js" id="logo">
+                <h1>JavaScript</h1>
+            </center>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html" class="active">Strona główna</a></li>
+            <li><a href="./Polecenia/index.html">Polecenia</a></li>
+            <li class='dropdown'>
+                <a href="#" class='dropbtn'>Zadania</a>
+                <div class="dropdown-content">
+                    <a href="./Zadanie1/index.html">Zadanie 1</a>
+                    <a href="./Zadanie2/index.html">Zadanie 2</a>
+                </div>
+            </li>
+            <li><a href="./Inne/index.html">Inne</a></li>
+            <li style="float: right;"><a onclick="changeColor()">Kolor</a></li>
+        </ul>
+    </div>
+    <div class="content" style="opacity: 0%;">
+        <div class="welcome">
+            <center>
+                <h2>Witaj <span id="name"></span></h3>
+                <p>Strona poświęcona jest JavaScript!</p>
+            </center>
+        </div>
+    </div>
+    <div class="footer">
+        <center>
+            <p>Wszelkie prawa zastrzeżone. Wykonał Jakub Szymczak.</p>
+            <p><b>Ostatnia modyfikacja: </b>14.12.2021</p>
+        </center>
+    </div>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/username.js"></script>
+</body>
+</html>
