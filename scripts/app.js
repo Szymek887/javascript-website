@@ -14,6 +14,7 @@ function changeColor()
     let button = document.querySelector('#calculateButton')
     let wrapper = document.querySelector('.result');
     let result = document.querySelector('#average');
+    let multiplicationTable = document.querySelector('.multiplicationTable');
 
     if(theme == 'bright')
     {
@@ -34,7 +35,15 @@ function changeColor()
                 wrapper.style.backgroundImage = 'linear-gradient(to bottom right, #003041, #424F60)';
             }
         }
-        
+
+        if(multiplicationTable != null)
+        {
+            for(let i = 1; i <= 10; i++)
+            {
+                document.querySelector('#table' + i).style.backgroundColor = '#003041';
+            }
+        }
+
         background.style.backgroundImage = 'linear-gradient(to bottom right, #003041, #424F60)';
         body.style.animation = 'goDark .5s forwards';
         content.style.color = 'white';
@@ -62,6 +71,14 @@ function changeColor()
             }
         }
         
+        if(multiplicationTable != null)
+        {
+            for(let i = 1; i <= 10; i++)
+            {
+                document.querySelector('#table' + i).style.backgroundColor = '#FF9190';
+            }
+        }
+
         background.style.backgroundImage = 'linear-gradient(to bottom right, #FF9190, #FDC094)';
         body.style.animation = 'goBright .5s forwards';
         content.style.color = 'black';

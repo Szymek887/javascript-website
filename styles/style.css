@@ -58,6 +58,7 @@ body
     font-size: 16px;
     padding: 20px;
     padding-bottom: 70px;
+    text-align: -webkit-center;
 }
 
 .header
@@ -184,6 +185,18 @@ body
     font-size: 16px;
 }
 
+.multiplicationTable > *
+{
+    width: 150px;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #FF9190;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 .footer
 {
     position: absolute;
@@ -195,6 +208,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .excersise1, .excersise2

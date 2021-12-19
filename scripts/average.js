@@ -1,9 +1,14 @@
-let theme='bright';
+document.querySelector('#numbers').onkeydown = function(event)
+{
+    let e = event || window.event;
+    if(e.keyCode == 13)
+    {
+        calculate();
+    }
+}
 
 function calculate()
 {
-    let numbersField = document.querySelector('#numbers');
-    let button = document.querySelector('#calculateButton')
     let wrapper = document.querySelector('.result');
     let result = document.querySelector('#average');
     let numbers = document.querySelector('#numbers').value;
@@ -11,7 +16,7 @@ function calculate()
     numbers = numbers.split(',');
     for (let number in numbers) 
     {
-        numbers[number] = parseInt(numbers[number]);
+        numbers[number] = parseFloat(numbers[number]);
         average += numbers[number];
     }
     average /= numbers.length;
