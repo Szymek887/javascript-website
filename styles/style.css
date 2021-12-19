@@ -21,7 +21,7 @@
 
 @keyframes goDark
 {
-    to{background-color: rgb(80, 80, 80)}
+    to{background-color: #2e3f47}
 }
 
 @keyframes goBright
@@ -30,11 +30,34 @@
     to{background-color: white;}
 }
 
+@keyframes darkMode
+{
+    to{background-color: #003041;}
+}
+
+@keyframes lightMode
+{
+    to{background-color: #FF9190;}
+}
+
 *
 {
     margin: 0;
     padding: 0;
     font-family: monospace;
+}
+
+body
+{
+    position: relative;
+    min-height: 100vh;
+}
+
+.content
+{
+    font-size: 16px;
+    padding: 20px;
+    padding-bottom: 70px;
 }
 
 .header
@@ -46,7 +69,7 @@
 
 #logo
 {
-    width: 150px;
+    width: 200px;
 }
 
 .logoWrapper
@@ -65,7 +88,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(59, 59, 59);
+    background-color: #FF9190;
     display: flex;
 }
 
@@ -86,7 +109,7 @@
 
 .menu .active
 {
-    background-color: gray;
+    background-color: #db756e;
 }
 
 .menu a:hover
@@ -117,8 +140,43 @@
     display: block;
 }
 
-.content{
-    padding: 20px;
+.content input::placeholder
+{
+    color: rgb(122, 122, 122);
+}
+
+.content input
+{
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background-color: #FF9190;
+}
+
+.content button
+{
+    font-size: 16px;
+    width: 100px;
+    background-color: #FDC094;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.content button:active
+{
+    position: relative;
+    top: 1px;
+}
+
+.result
+{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 40px;
 }
 
 .welcome p
@@ -128,12 +186,15 @@
 
 .footer
 {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px;
-    background-color: rgb(59, 59, 59);
+    height: 50px;
+    background-color: #FF9190;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .excersise1, .excersise2
@@ -141,5 +202,5 @@
     width: 500px;
     padding: 20px;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom right, #FF9190, #FDC094);
+    background-color: #FF9190;
 }
