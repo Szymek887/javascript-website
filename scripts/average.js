@@ -10,7 +10,7 @@ document.querySelector('#numbers').onkeydown = function(event)
 function calculate()
 {
     let wrapper = document.querySelector('.result');
-    let result = document.querySelector('#average');
+    let result = document.querySelector('#result');
     let numbers = document.querySelector('#numbers').value;
     let average = 0;
     numbers = numbers.split(',');

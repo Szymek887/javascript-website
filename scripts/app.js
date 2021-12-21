@@ -11,9 +11,12 @@ function changeColor()
     let active = document.querySelector('.active');
     let footer = document.querySelector('.footer');
     let numbersField = document.querySelector('#numbers');
-    let button = document.querySelector('#calculateButton')
+    let button = document.querySelector('.calculateButton');
+    let button1 = document.querySelector('.calculateButton1');
+    let button2 = document.querySelector('.calculateButton2');
+    let button3 = document.querySelector('.calculateButton3');
     let wrapper = document.querySelector('.result');
-    let result = document.querySelector('#average');
+    let result = document.querySelector('#result');
     let multiplicationTable = document.querySelector('.multiplicationTable');
 
     if(theme == 'bright')
@@ -34,6 +37,16 @@ function changeColor()
             {
                 wrapper.style.backgroundImage = 'linear-gradient(to bottom right, #003041, #424F60)';
             }
+        }
+
+        if(button1 != null)
+        {
+            button1.style.backgroundColor = '#424F60';
+            button1.style.color = 'white';
+            button2.style.backgroundColor = '#424F60';
+            button2.style.color = 'white';
+            button3.style.backgroundColor = '#424F60';
+            button3.style.color = 'white';
         }
 
         if(multiplicationTable != null)
@@ -69,6 +82,16 @@ function changeColor()
             {
                 wrapper.style.backgroundImage = 'linear-gradient(to bottom right, #FF9190, #FDC094)';
             }
+        }
+
+        if(button1 != null)
+        {
+            button1.style.backgroundColor = '#FDC094';
+            button1.style.color = 'black';
+            button2.style.backgroundColor = '#FDC094';
+            button2.style.color = 'black';
+            button3.style.backgroundColor = '#FDC094';
+            button3.style.color = 'black';
         }
         
         if(multiplicationTable != null)
