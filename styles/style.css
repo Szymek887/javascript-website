@@ -26,7 +26,7 @@
 
 @keyframes goBright
 {
-    from{background-color: rgb(80, 80, 80)}
+    from{background-color: #2e3f47}
     to{background-color: white;}
 }
 
@@ -159,7 +159,6 @@ body
 .content button
 {
     font-size: 16px;
-    width: 100px;
     background-color: #FDC094;
     padding: 10px;
     border-radius: 10px;

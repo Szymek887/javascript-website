@@ -21,7 +21,7 @@
     <div class="menu">
         <ul id="menu">
             <li><a href="../index.html">Strona główna</a></li>
-            <li><a href="./index.html" class="active">Polecenia</a></li>
+            <li><a href="../Polecenia/index.html">Polecenia</a></li>
             <li class='dropdown'>
                 <a href="#" class='dropbtn'>Zadania</a>
                 <div class="dropdown-content">
@@ -29,19 +29,22 @@
                     <a href="../Zadanie2/index.html">Zadanie 2</a>
                 </div>
             </li>
-            <li><a href="../Inne/index.html">Inne</a></li>
+            <li><a href="./index.html" class="active">Inne</a></li>
             <li><a onclick="changeColor()">Kolor</a></li>
         </ul>
     </div>
     <div class="content">
-        <div class="excersise1">
-            <h2>Zadanie 1</h2>
-            <p>Przygotuj stronę internetową uwzględniając język polski na stronie, poprawne kodowanie polskich znaków oraz tytuł strony ZAD1 i uwzględnij formatowanie css. Zapisz go pod nazwą strona1.html. Dołącz do dokumentu kod wykorzystując składnię JavaScript, który spowoduje wyświetlenie efektu działania skryptu umieszczonego w pliku srednia.js. Skrypt ma spowodować wyświetlenie średniej arytmetycznej z n wprowadzonych przez użytkownika liczb. Podane wartości przez użytkownika i wynik przedstaw w ciekawy sposób. </p>
-        </div>
-        <br>
-        <div class="excersise2">
-            <h2>Zadanie 2</h2>
-            <p>Utwórz dokument strona2.html poprawnie deklarując w nim kodowanie polskich znaków, tytuł dokumentu - ZAD2 oraz język polski. W części głównej umieść tekst "Tabliczka mnożenia".</p>
+        <div class="code">
+            <h2>Podaj liczby do obliczenia</h2> <br>
+            <input type="text" id="numbers" placeholder="5,10,15...">
+            <button onclick = "dodaj()" id="calculateButton">+</button>
+            <button onclick = "odejmij()" id="calculateButton">-</button>
+            <button onclick = "pomnoz()" id="calculateButton">*</button>
+            <button onclick = "podziel()" id="calculateButton">/</button> <br><br>
+            <h3>Wynik to:</h3>
+            <div class="result">
+                <span id="result"></span>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -49,5 +52,6 @@
         <p><b>Ostatnia modyfikacja: </b>14.12.2021</p>
     </div>
     <script src="../scripts/app.js"></script>
+    <script src="../scripts/other.js"></script>
 </body>
 </html>

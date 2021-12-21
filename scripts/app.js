@@ -45,7 +45,7 @@ function changeColor()
         }
 
         background.style.backgroundImage = 'linear-gradient(to bottom right, #003041, #424F60)';
-        body.style.animation = 'goDark .5s forwards';
+        body.style.animation = 'goDark .3s forwards';
         content.style.color = 'white';
         menu.style.backgroundColor = '#003041';
         active.style.backgroundColor = 'rgb(29, 29, 29)'
@@ -80,7 +80,7 @@ function changeColor()
         }
 
         background.style.backgroundImage = 'linear-gradient(to bottom right, #FF9190, #FDC094)';
-        body.style.animation = 'goBright .5s forwards';
+        body.style.animation = 'goBright .3s forwards';
         content.style.color = 'black';
         menu.style.backgroundColor = '#FF9190';
         active.style.backgroundColor = '#db756e';
